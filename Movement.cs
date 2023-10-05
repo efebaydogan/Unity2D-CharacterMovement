@@ -10,6 +10,7 @@ public class Movement : MonoBehaviour
     public int jumpForce;
     Rigidbody2D rb;
     public bool onFloor;
+    public bool faceRight = true;
 
 
     void Start()
@@ -28,6 +29,16 @@ public class Movement : MonoBehaviour
             rb.velocity = Vector2.up * jumpForce;
             onfloor = false;
         }
+
+        if(faceRight == true && xmovement < 0) 
+        {
+            Turn();
+        }
+
+        else if(faceRight == false && xmovement > 0)
+        {
+            Turn();
+        }
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -36,5 +47,13 @@ public class Movement : MonoBehaviour
         {
             onFloor = true;//When you click on the floor in Unity, there is a tag in the upper right corner, you can change it from there.
         }
+    }
+
+    void Turn() 
+    {
+        faceRight = !faceRight;
+        Vector2 scale = transform.localScale;
+        scale.x *= -1;
+        transform.localScale = scale;
     }
 }
