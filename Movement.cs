@@ -7,7 +7,7 @@ public class Movement : MonoBehaviour
 {
     float xmovement;
     public int xspeed;
-
+    public int jumpForce;
     Rigidbody2D rb;
 
 
@@ -21,5 +21,10 @@ public class Movement : MonoBehaviour
     {
         xmovement = Input.GetAxis("Horizontal");
         rb.velocity = new Vector2(xmovement * xspeed,rb.velocity.y);
+
+        if(Input.GetKeyDown(KeyCode.Space))
+        {
+            rb.velocity = Vector2.up * jumpForce;
+        }
     }
 }
