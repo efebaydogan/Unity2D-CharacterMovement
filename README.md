@@ -34,7 +34,7 @@ It is a function that works by sending a message when an object touches another 
 ATTENTİON:For the character's jump function to work correctly, you need to make the tag of your floor "floor" in unity.
 ## Author
 
-- [Efe Baydoğan](https://www.instagram.com/efebaydogan_) for design and development.
+- [Efe Baydoğan](https://www.instagram.com/efebaydogan10) for design and development.
 
   ----------------------------------------------------------------------------------------------------
 
