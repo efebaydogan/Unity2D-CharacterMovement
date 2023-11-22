@@ -34,7 +34,7 @@ It is a function that works by sending a message when an object touches another 
 ATTENTİON:For the character's jump function to work correctly, you need to make the tag of your floor "floor" in unity.
 ## Author
 
-- [Efe Baydoğan](https://www.instagram.com/efebaydogan10) for design and development.
+- Created by Efe Baydoğan.
 
   ----------------------------------------------------------------------------------------------------
 
@@ -72,4 +72,4 @@ Bir nesne başka bir nesneye dokunduğunda mesaj göndererek çalışan bir fonk
 DİKKAT:Karakterin zıplama fonksiyonunun doğru çalışması için, zemininizin etiketini unity'de "floor" yapmanız gerekir.
 ## Yazar
 
-- [Efe Baydoğan](https://www.instagram.com/efebaydogan_) tasarım ve kodlama için.
+- Efe Baydoğan tarafından oluşturuldu.
